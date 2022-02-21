@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --white: #dddddd;
+  --tempWhite: #a8a1a1;
+  --dark: #242326;
+}
 * {
+  background-color: var(--white);
   font-family: Poppins;
-  word-break: break-all;
+  word-break: word-break;
+  color: var(--dark);
 }
 
-body {
+.mainContainer {
   display: flex;
 
   justify-content: center;
@@ -23,7 +30,7 @@ body {
 }
 
 section {
-  background-color: pink;
+  background-color: var(--white);
 }
 
 span {
@@ -31,15 +38,16 @@ span {
 }
 
 .firstSection {
-  width: 400px;
+  width: 460px;
 }
 
 .secondSection {
-  width: 100px;
+  width: 80px;
 }
 
 .thirdSection {
-  width: 270px;
+  width: 300px;
+  text-align: right;
 }
 
 .projectsList {
@@ -49,10 +57,55 @@ span {
 li {
   list-style-type: none;
 }
+.makiHeadline {
+  text-decoration: none;
+  line-height: 48px;
+  font-size: 48px;
+  margin: 0;
+}
 .subHeadline {
-  font-size: 20px;
-  font-weight: 550;
+  font-size: 24px;
+  font-weight: 800;
 }
 .line {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo {
+  width: 129px;
+  height: 143px;
+}
+
+.firstSectionThirdColumn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.firstSectionFirstColumn {
+  margin-bottom: 57px;
+}
+
+.secondSectionFirstColumn {
+  margin-bottom: 65px;
+}
+
+.maki {
+  text-decoration: none;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.secondSectionThirdColumn {
+  height: 153px;
+}
+
+.about {
+  margin-bottom: 96px;
+}
+
+.github {
+  float: right;
+  line-height: 8px;
 }

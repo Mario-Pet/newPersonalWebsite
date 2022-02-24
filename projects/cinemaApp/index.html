@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="../../favicon.ico">
     
 </head>
-<body>
+<body> 
     <select name="language" id="language">
         <option>german</option>
         <option>english</option>
@@ -25,7 +25,7 @@
                 <option><span id="movie">Spider-Man: No way Home</span> <span id="priceOfMovie"> - 19€</span></option>
                 <option><span id="movie">The Suice Squad</span> <span id="priceOfMovie"> - 18€</span></option>
             </select>
-            <div class="info">
+            <div id="info" class="info">
                 <figure class="chairsInfo">
                     <img class="chair unoccupied">
                     <figcaption id="notoccupiedText">Nicht Besetzt</figcaption>
@@ -41,7 +41,7 @@
             </div>
         </header>
         <main>
-            <div class="screen"></div>
+            <div id="screen" class="screen"></div>
             <div class="chairSelection">
                 
                 <section id="leftSection" name="leftSection" class="chairsGroup side">
@@ -58,9 +58,9 @@
         <footer>
 
         
-            <p id="status">Sie haben <span id="chairsSelected">0</span> <span id="stuehle">Stühle</span> ausgewählt und der Preis <span id="stuehlen">aller Stühlen ist</span>  <span id="priceOfAllChairsSelected">0</span>€!</p>
+            <span id="status">Sie haben <span id="chairsSelected">0</span> <span id="stuehle">Stühle</span> ausgewählt und der Preis <span id="stuehlen">aller Stühlen ist</span>  <span id="priceOfAllChairsSelected">0</span>€!</span>
 
-            <button id="submit" class="displayReceipt">Quittung zeigen</button>
+            <button id="submit" class="displayReceipt buttonDark white">Quittung zeigen</button>
             <section>
                 <table id="table" class="notDisplayed">
                     <thead>
@@ -75,13 +75,22 @@
                         <tr>
                             <td id="movieRunning"></td>
                             <td id="chairsOccupied"></td>
-                            <td><span id="priceOfChairsOccupied"></span>€</td>
+                            <td id="chairsTable"><span id="priceOfChairsOccupied"></span>€</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
         </footer>
+    </div>
+
+    <div class="theme">
+        <input type="checkbox" class="checkbox" id="chk" value="white"/>
+        <label class="label" for="chk" id="chklabel">
+            <img class="themeIconSun" src="/../../imgs/whiteThemeIcon.png">
+            <img class="themeIconMoon" src="/../../imgs/darkThemeIcon.png">
+            <div class="ball" id="ball"></div>
+        </label>
     </div>
 </body>
 </html>

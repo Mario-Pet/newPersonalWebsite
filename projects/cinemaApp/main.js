@@ -278,5 +278,78 @@ document.querySelector("#language").addEventListener("change", (e) => {
     }
 })
 
+document.querySelector("#chk").addEventListener("change", e => {
+    const btn = document.querySelector("#chk")
+    if (btn.value == "white") {
+        btn.value = "dark";
+    } else {
+        btn.value = "white";
+    }
+
+    if (btn.value === "dark") {
+        document.body.classList.toggle("darkBG");
+
+        document.querySelector("#language").classList.toggle("languageWhite");
+
+        document.querySelector("#headerMovie").classList.toggle("white");
+        document.querySelector("#movieSelector").classList.toggle("white");
+
+        document.querySelector("#screen").classList.toggle("screenWhite");
+
+        document.querySelector("#status").classList.toggle("white");
+
+        document.querySelector("#tableMovie").classList.toggle("white");
+        document.querySelector("#tableChairs").classList.toggle("white");
+        document.querySelector("#tablePrice").classList.toggle("white");
+        document.querySelector("#notoccupiedText").classList.toggle("dark")
+        document.querySelector("#occupiedText").classList.toggle("dark")
+        document.querySelector("#selectedText").classList.toggle("dark")
+
+        document.querySelector("#submit").classList.remove("buttonDark")
+        document.querySelector("#submit").classList.add("buttonWhite")
+        document.querySelector("#submit").classList.remove("white")
+        document.querySelector("#submit").classList.add("dark")
+
+        document.querySelector("#movieRunning").classList.toggle("white")
+        document.querySelector("#chairsTable").classList.toggle("white")
+        document.querySelector("#chairsOccupied").classList.toggle("white")
+
+
+    } else {
+        document.body.classList.toggle("darkBG");
+
+        document.querySelector("#language").classList.toggle("languageWhite");
+
+        document.querySelector("#headerMovie").classList.toggle("white");
+        document.querySelector("#movieSelector").classList.toggle("white");
+
+        document.querySelector("#screen").classList.toggle("screenWhite");
+
+        document.querySelector("#status").classList.toggle("white");
+
+        document.querySelector("#tableMovie").classList.toggle("white");
+        document.querySelector("#tableChairs").classList.toggle("white");
+        document.querySelector("#tablePrice").classList.toggle("white");
+        document.querySelector("#info").classList.toggle("dark")
+
+        document.querySelector("#notoccupiedText").classList.toggle("white")
+        document.querySelector("#occupiedText").classList.toggle("white")
+        document.querySelector("#selectedText").classList.toggle("white")
+
+        document.querySelector("#submit").classList.remove("buttonWhite")
+        document.querySelector("#submit").classList.add("buttonDark")
+        document.querySelector("#submit").classList.toggle("dark")
+
+        document.querySelector("#submit").classList.remove("dark")
+        document.querySelector("#submit").classList.add("white")
+
+        document.querySelector("#movieRunning").classList.toggle("white")
+        document.querySelector("#chairsTable").classList.toggle("white")
+        document.querySelector("#chairsOccupied").classList.toggle("white")
+
+        
+    }
+})
+
 chairs.add(100)
 chairs.randomChairSelector()

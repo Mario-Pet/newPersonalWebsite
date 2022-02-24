@@ -103,11 +103,11 @@ li {
 }
 
 .secondSectionThirdColumn {
-  height: 205px;
+  height: 180px;
 }
 
 .secondSectionThirdColumnEnglish {
-  height: 162px;
+  height: 158px;
 }
 
 .about {
@@ -122,8 +122,8 @@ select {
 }
 .github {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 5px;
   line-height: 8px;
 }
 
@@ -173,4 +173,14 @@ ul {
 
 .white {
   color: var(--white);
+}
+
+.language {
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+.languageWhite {
+  color: var(--white);
+  background-color: var(--dark);
 }

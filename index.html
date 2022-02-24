@@ -9,7 +9,7 @@
     <script defer src="main.js"></script>
 </head>
 <body id="body">
-    <select>
+    <select id="language" class="language">
         <option>german</option>
         <option>english</option>
     </select>
@@ -18,7 +18,7 @@
         <div class="container">
             <section class="firstSection">
                 <div class="firstSectionFirstColumn">
-                    <span class="makiHeadline" id="makiHeadline">hallo, ich bin <span class="maki">maki;</span></span><br>
+                    <span class="makiHeadline" id="makiHeadline">hallo, ich bin <span class="maki" id="makiLine">maki;</span></span><br>
                     <span class="line underHeadline" id="underHeadline">Ich liebe zu programmieren und ich liebe zu lernen.</span>
                 </div>
                 <div class="secondSectionFirstColumn">
@@ -27,29 +27,29 @@
                     <a href="projects/" class="line" id="projectsBankApp">Bank App;</a>
                     <a href="projects/" class="line" id="projectsCinemaApp">Kinoplatzreservierung;</a>
                     <a href="projects/" class="line" id="projectsCountdown">Countdown bis zum neuen Jahr;</a>
-                    <a href="projects/" class="line" id="projectsTyperacer">typeracer;</a>
+
                 </div>
                 <div class="thirdSectionFirstColumn">
-                    <span class="subHeadline">SKILLS</span>
+                    <span class="subHeadline" id="skillsLine">SKILLS</span>
                     <ul>
                         <li class="liFirstRow">
-                            <img title="Javascript" class="skillsImg liOther" src="imgs/wb/javascript.png">
-                            <img title="HTML5" class="skillsImg liOther" src="imgs/wb/html.png">
-                            <img title="CSS3" class="skillsImg liOther" src="imgs/wb/css.png">
-                            <img title="Git" class="skillsImg liOther" src="imgs/wb/git.png">
-                            <img title="Github" class="skillsImg liOther" src="imgs/wb/github.png">
-                            <img title="Firebase" class="skillsImg liOther" src="imgs/wb/firebase.png">
+                            <img title="Javascript" class="skillsImg liOther" src="imgs/skills/whbl/javascript.png" id="jsIcon">
+                            <img title="HTML5" class="skillsImg liOther" src="imgs/skills/whbl/html.png" id="htmlIcon">
+                            <img title="CSS3" class="skillsImg liOther" src="imgs/skills/whbl/css.png" id="cssIcon">
+                            <img title="Git" class="skillsImg liOther" src="imgs/skills/whbl/git.png" id="gitIcon">
+                            <img title="Github" class="skillsImg liOther" src="imgs/skills/whbl/github.png" id="githubIcon">
+                            <img title="Firebase" class="skillsImg liOther" src="imgs/skills/whbl/firebase.png" id="firebaseIcon">
                         </li>
                         <li>
-                            <img title="Figma" class="skillsImg liOther" src="imgs/wb/figma.png">
-                            <img title="Adobe Xd" class="skillsImg liOther" src="imgs/wb/adobexd.png">
-                            <img title="Photoshop" class="skillsImg liOther" src="imgs/wb/photoshop.png">
-                            <img title="Adobe After Effects" class="skillsImg liOther" src="imgs/wb/aftereffects.png">
+                            <img title="Figma" class="skillsImg liOther" src="imgs/skills/whbl/figma.png" id="figmaIcon">
+                            <img title="Adobe Xd" class="skillsImg liOther" src="imgs/skills/whbl/adobexd.png" id="adobexdIcon">
+                            <img title="Photoshop" class="skillsImg liOther" src="imgs/skills/whbl/photoshop.png" id="photoshopIcon">
+                            <img title="Adobe After Effects" class="skillsImg liOther" src="imgs/skills/whbl/aftereffects.png" id="aftereffectsIcon">
 
                         </li>
                         <li>
-                            <img title="Codewars" class="skillsImg liOther" src="imgs/wb/codewars.png">
-                            <img title="Codecademy" class="skillsImg"src="imgs/wb/codecademy.png">
+                            <img title="Codewars" class="skillsImg liOther" src="imgs/skills/whbl/codewars.png" id="codewarsIcon">
+                            <img title="Codecademy" class="skillsImg"src="imgs/skills/whbl/codecademy.png" id="codecademyIcon">
                         </li>
                     </ul>
                 </div>
@@ -58,7 +58,7 @@
             </section>
             <section class="thirdSection">
                 <div class="firstSectionThirdColumn">
-                    <img src="imgs/logoBlack.png" alt="" class="logo">
+                    <img src="imgs/logoDark1080.png" alt="" class="logo" id="logoImg">
                 </div>
                 <div class="secondSectionThirdColumn" id="secondSectionThirdColumn"></div>
                 <div class="thirdSectionThirdColumn">

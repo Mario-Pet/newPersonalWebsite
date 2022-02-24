@@ -301,18 +301,26 @@ document.querySelector("#chk").addEventListener("change", e => {
         document.querySelector("#tableMovie").classList.toggle("white");
         document.querySelector("#tableChairs").classList.toggle("white");
         document.querySelector("#tablePrice").classList.toggle("white");
-        document.querySelector("#notoccupiedText").classList.toggle("dark")
-        document.querySelector("#occupiedText").classList.toggle("dark")
-        document.querySelector("#selectedText").classList.toggle("dark")
+        document.querySelector("#notoccupiedText").classList.remove("white")
+        document.querySelector("#notoccupiedText").classList.add("dark")
+        document.querySelector("#occupiedText").classList.remove("white")
+        document.querySelector("#occupiedText").classList.add("dark")
+        document.querySelector("#selectedText").classList.remove("white")
+        document.querySelector("#selectedText").classList.add("dark")
 
         document.querySelector("#submit").classList.remove("buttonDark")
         document.querySelector("#submit").classList.add("buttonWhite")
         document.querySelector("#submit").classList.remove("white")
         document.querySelector("#submit").classList.add("dark")
+        document.querySelector("#info").classList.remove("darkBG")
+        document.querySelector("#info").classList.add("whiteBG")
 
         document.querySelector("#movieRunning").classList.toggle("white")
         document.querySelector("#chairsTable").classList.toggle("white")
         document.querySelector("#chairsOccupied").classList.toggle("white")
+
+        document.querySelector("#sourcecode").classList.remove("dark")
+        document.querySelector("#sourcecode").classList.add("white")
 
 
     } else {
@@ -330,11 +338,15 @@ document.querySelector("#chk").addEventListener("change", e => {
         document.querySelector("#tableMovie").classList.toggle("white");
         document.querySelector("#tableChairs").classList.toggle("white");
         document.querySelector("#tablePrice").classList.toggle("white");
-        document.querySelector("#info").classList.toggle("dark")
 
-        document.querySelector("#notoccupiedText").classList.toggle("white")
-        document.querySelector("#occupiedText").classList.toggle("white")
-        document.querySelector("#selectedText").classList.toggle("white")
+        document.querySelector("#notoccupiedText").classList.remove("dark")
+        document.querySelector("#notoccupiedText").classList.add("white")
+        document.querySelector("#occupiedText").classList.remove("dark")
+        document.querySelector("#occupiedText").classList.add("white")
+        document.querySelector("#selectedText").classList.remove("dark")
+        document.querySelector("#selectedText").classList.add("white")
+        document.querySelector("#info").classList.remove("whiteBG")
+        document.querySelector("#info").classList.add("darkBG")
 
         document.querySelector("#submit").classList.remove("buttonWhite")
         document.querySelector("#submit").classList.add("buttonDark")
@@ -346,6 +358,9 @@ document.querySelector("#chk").addEventListener("change", e => {
         document.querySelector("#movieRunning").classList.toggle("white")
         document.querySelector("#chairsTable").classList.toggle("white")
         document.querySelector("#chairsOccupied").classList.toggle("white")
+
+        document.querySelector("#sourcecode").classList.remove("white")
+        document.querySelector("#sourcecode").classList.add("dark")
 
         
     }

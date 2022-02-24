@@ -1,25 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --purple: #9d5dea;
-  --blackBG: #242326;
-  --darker: #353436;
-  --lightishGray: #474648;
+  --darker: #1e1e1f;
+  --lightishGray: hsl(0, 0%, 17%);
   --green: #4ff85d;
   --yellow: #f8f84f;
   --red: #f84f4f;
-  --textWhite: #c7c7c7;
+  --white: #dddddd;
+  --tempWhite: #a8a1a1;
+  --dark: #242326;
 }
 * {
-  font-family: "Roboto Mono", monospace;
+  font-family: Poppins;
 }
 body {
-  background-color: var(--blackBG);
+  background-color: var(--white);
   font-family: "Roboto Mono", monospace;
-  color: var(--textWhite);
+  color: var(--dark);
   /*color: #9d5dea;*/
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.darkBG {
+  background-color: var(--dark) !important;
+}
+.whiteBG {
+  background-color: var(--white) !important;
+}
+.dark {
+  color: var(--dark) !important;
+}
+
+.white {
+  color: var(--white) !important;
+}
+
+.darkLine {
+  border-bottom: 1px solid var(--dark);
+}
 /*
     ___  _____   ______
     / _ \/  _/ | / / __/
@@ -46,8 +69,8 @@ body {
   height: 600px;
   max-height: 600px;
 
-  background-color: var(--darker);
-  border-radius: 40px;
+  background-color: var(--dark);
+  border-radius: 30px;
 }
 
 /*
@@ -68,7 +91,7 @@ body {
 
 .balance {
   padding: 25px 0px;
-  color: var(--purple);
+  color: var(--white);
 }
 
 .currency {
@@ -77,10 +100,9 @@ body {
   text-overflow: ellipsis;
 }
 .selectors {
-  background-color: var(--darker);
-  color: var(--textWhite);
+  background-color: var(--dark);
+  color: var(--white);
   border: none;
-  color: var(--purple);
 }
 
 /*
@@ -99,8 +121,8 @@ body {
   width: 735px;
   height: 71px;
 
-  background-color: var(--darker);
-  border-radius: 60px;
+  background-color: var(--dark);
+  border-radius: 30px;
 }
 
 .inputName {
@@ -110,13 +132,13 @@ body {
   border: none;
   background-color: var(--lightishGray);
   text-align: center;
-  color: var(--textWhite);
+  color: var(--white);
 }
 .inputName::placeholder {
   text-align: center;
-  color: #353436;
+  color: var(--white);
   font-family: "Roboto Mono", monospace;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .inputAmount {
@@ -124,16 +146,16 @@ body {
   height: 42px;
   border-radius: 60px;
   border: none;
-  background-color: #474648;
+  background-color: var(--lightishGray);
   text-align: center;
-  color: var(--textWhite);
+  color: var(--white);
 }
 
 .inputAmount::placeholder {
   text-align: center;
-  color: var(--darker);
+  color: var(--white);
   font-family: "Roboto Mono", monospace;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 15px;
 }
 
@@ -142,7 +164,7 @@ body {
   height: 42px;
   border-radius: 60px;
   border: none;
-  background-color: var(--lightishGray);
+  background-color: var(--darker);
 }
 
 .datepicker {
@@ -189,8 +211,8 @@ form {
   border-radius: 60px;
   border: none;
 
-  background-color: var(--purple);
-  font-weight: 700;
+  background-color: var(--white);
+  font-weight: 600;
 }
 /*
   _________   ___  __   ____
@@ -213,7 +235,7 @@ table {
 
 th,
 td {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid var(--white);
   padding: 10px 5px;
 
   text-align: center;
@@ -226,19 +248,19 @@ thead tr th {
 }
 
 tbody {
-  color: var(--purple);
+  color: var(--white);
   display: table-row-group;
   vertical-align: middle;
 }
 
 th {
   font-size: 22px;
-  color: var(--purple);
-  background-color: var(--darker);
+  color: var(--white);
+  background-color: var(--dark);
 }
 
 td {
-  color: var(--textWhite);
+  color: var(--white);
 }
 
 .tableScroll {
@@ -255,6 +277,63 @@ td {
 
 .denied {
   color: var(--red);
+}
+.theme {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+body.dark {
+  background: var(--dark);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #0e0e0e;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  height: 14px;
+  width: 30px;
+  transform: scale(1.5);
+}
+
+.label > .ball {
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 10px;
+  width: 10px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(15px);
+}
+
+.themeIconSun {
+  position: absolute;
+  right: 3px;
+  width: 10px;
+  height: 10px;
+}
+
+.themeIconMoon {
+  position: absolute;
+  left: 3px;
+  width: 9px;
+  height: 9px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -595,8 +674,9 @@ select {
   display: absolute;
   top: 100%;
   left: 100%;
+  font-size: 16px;
 
   border: none;
-  color: var(--purple);
-  background-color: var(--dark);
+  color: var(--dark);
+  background-color: var(--white);
 }

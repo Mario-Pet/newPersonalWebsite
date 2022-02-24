@@ -40,3 +40,35 @@ setInterval(() => {
     
  }, 1000)
 
+document.querySelector("#chk").addEventListener("change", e => {
+    const btn = document.querySelector("#chk");
+
+    if (btn.value === "dark") {
+        btn.value = "white";
+    } else {
+        btn.value = "dark";
+    }
+
+    if (btn.value === "dark") {
+        document.body.classList.toggle("darkBG");
+        
+        document.querySelector("#headline").classList.toggle("white");
+        document.querySelector("#daysBox").classList.toggle("white");
+        document.querySelector("#hoursBox").classList.toggle("white");
+        document.querySelector("#minutesBox").classList.toggle("white");
+        document.querySelector("#secondsBox").classList.toggle("white");
+        
+        document.querySelector("#language").classList.toggle("white");
+    } else {
+        document.body.classList.toggle("darkBG")
+
+        document.querySelector("#headline").classList.toggle("white");
+
+        document.querySelector("#daysBox").classList.toggle("white");
+        document.querySelector("#hoursBox").classList.toggle("white");
+        document.querySelector("#minutesBox").classList.toggle("white");
+        document.querySelector("#secondsBox").classList.toggle("white");
+
+        document.querySelector("#language").classList.toggle("white");
+    }
+})

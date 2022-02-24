@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --purple: #9d5dea;
@@ -8,11 +8,78 @@
   --tempWhite: #a8a1a1;
 }
 * {
-  font-family: "Roboto Mono", monospace;
+  font-family: Poppins;
 }
 body {
   background-color: var(--white);
+  transition: background 0.2s linear;
 }
+.darkBG {
+  background-color: var(--dark) !important;
+}
+.whiteBG {
+  background-color: var(--white) !important;
+}
+.dark {
+  color: var(--dark) !important;
+}
+
+.white {
+  color: var(--white) !important;
+}
+body.dark {
+  background: var(--dark);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #0e0e0e;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  height: 14px;
+  width: 30px;
+  transform: scale(1.5);
+}
+
+.label > .ball {
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 10px;
+  width: 10px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(15px);
+}
+
+.themeIconSun {
+  position: absolute;
+  right: 3px;
+  width: 10px;
+  height: 10px;
+}
+
+.themeIconMoon {
+  position: absolute;
+  left: 3px;
+  width: 9px;
+  height: 9px;
+}
+
 .mainWrapper {
   display: flex;
   align-content: center;
@@ -25,9 +92,7 @@ body {
 }
 
 #newyearsheader {
-  color: var(--dark);
   display: flex;
-
   justify-content: center;
 }
 
@@ -41,9 +106,10 @@ body {
   align-items: center;
   width: 300px;
 }
-
-article {
+#section {
   color: var(--dark);
+}
+article {
   height: 120px;
 
   margin: 0% 5%;
@@ -106,6 +172,7 @@ article {
 /* Styling */
 
 .headline {
+  color: var(--dark);
   font-size: 20px;
 }
 
@@ -120,7 +187,8 @@ select {
 
   border: none;
   color: var(--dark);
-  background-color: var(--white);
+  font-size: 16px;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 5000px) {

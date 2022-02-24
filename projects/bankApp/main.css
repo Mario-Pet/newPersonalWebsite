@@ -41,7 +41,22 @@ body {
 }
 
 .darkLine {
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid var(--dark) !important;
+}
+
+.whiteLine {
+  border-bottom: 1px solid var(--white) !important;
+}
+.line {
+  font-size: 100%;
+  font-weight: 600;
+}
+
+.sourcecode {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  line-height: 8px;
 }
 /*
     ___  _____   ______
@@ -235,7 +250,6 @@ table {
 
 th,
 td {
-  border-bottom: 1px solid var(--white);
   padding: 10px 5px;
 
   text-align: center;

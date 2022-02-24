@@ -59,6 +59,9 @@ document.querySelector("#chk").addEventListener("change", e => {
         document.querySelector("#secondsBox").classList.toggle("white");
         
         document.querySelector("#language").classList.toggle("white");
+
+        document.querySelector("#sourcecode").classList.remove("dark")
+        document.querySelector("#sourcecode").classList.add("white")
     } else {
         document.body.classList.toggle("darkBG")
 
@@ -70,5 +73,8 @@ document.querySelector("#chk").addEventListener("change", e => {
         document.querySelector("#secondsBox").classList.toggle("white");
 
         document.querySelector("#language").classList.toggle("white");
+
+        document.querySelector("#sourcecode").classList.remove("white")
+        document.querySelector("#sourcecode").classList.add("dark")
     }
 })

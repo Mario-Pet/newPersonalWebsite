@@ -59,7 +59,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
         })),
         statusCell
     );
-
+        row.setAttribute("class", "whiteLine")
     // Adding pending class if the status is pending
     if (statusCell.textContent === "pending") {
         statusCell.setAttribute("class", "pending")
@@ -167,8 +167,8 @@ document.querySelector("#language").addEventListener("change", (e) => {
         document.querySelector("#headStatus").textContent = "status";
         document.querySelector("#name").placeholder = "name"
     }
-})
-//in progress
+}) 
+
 // document.querySelector("#chk").addEventListener("change", e => {
 //     const btn = document.querySelector("#chk")
 //     if (btn.value == "white") {
@@ -188,7 +188,8 @@ document.querySelector("#language").addEventListener("change", (e) => {
 //         document.querySelector("#headAmount").classList.toggle("dark");
 //         document.querySelector("#headDate").classList.toggle("dark");
 //         document.querySelector("#headStatus").classList.toggle("dark");
-//         document.querySelector("thead").classList.toggle("darkLine");
+//         document.querySelector("td").classList.toggle("darkLine");
+//         document.querySelector("th").classList.toggle("darkLine");
 
 //     } else {
 //         document.querySelector("#balance").classList.toggle("dark");
@@ -201,6 +202,7 @@ document.querySelector("#language").addEventListener("change", (e) => {
 //         document.querySelector("#headAmount").classList.toggle("dark");
 //         document.querySelector("#headDate").classList.toggle("dark");
 //         document.querySelector("#headStatus").classList.toggle("dark");
-//         document.querySelector("thead").classList.toggle("darkLine");
+//         document.querySelector("td").classList.toggle("darkLine");
+//         document.querySelector("th").classList.toggle("darkLine");
 //     }
 // })

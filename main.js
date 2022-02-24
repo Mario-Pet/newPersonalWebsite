@@ -1,7 +1,8 @@
 document.querySelector("select").addEventListener("change", e => {
-    console.log(e.target.value)
+    let classValue;
+    if(document.querySelector("#chk").value == "dark") {classValue = "white"};
     if (document.querySelector("select").value == "english") {
-        document.querySelector("#makiHeadline").innerHTML = 'hello, i am <span class="maki" id="makiLine">maki;</span>';
+        document.querySelector("#makiHeadline").innerHTML = `hello, i am <span class="maki ${classValue}" id="makiLine">maki;</span>`;
         document.querySelector("#makiHeadline").classList.remove("makiHeadline")
         document.querySelector("#makiHeadline").classList.add("makiHeadlineEnglish")
         document.querySelector("#underHeadline").textContent = "I love to code and I love to learn."
@@ -15,7 +16,7 @@ document.querySelector("select").addEventListener("change", e => {
         document.querySelector("#secondSectionThirdColumn").classList.toggle("secondSectionThirdColumnEnglish")
 
     } else {
-        document.querySelector("#makiHeadline").innerHTML = 'hallo, ich bin <span class="maki" id="makiLine">maki;</span>';
+        document.querySelector("#makiHeadline").innerHTML = `hallo, ich bin <span class="maki ${classValue}" id="makiLine">maki;</span>`;
         document.querySelector("#makiHeadline").classList.remove("makiHeadlineEnglish")
         document.querySelector("#makiHeadline").classList.add("makiHeadline")
         document.querySelector("#underHeadline").textContent = "Ich liebe zu programmieren und ich liebe zu lernen."
@@ -31,8 +32,8 @@ document.querySelector("select").addEventListener("change", e => {
     }
 })
 
-document.querySelector("#theme").addEventListener("click", e => {
-    const btn = document.querySelector("#theme")
+document.querySelector("#chk").addEventListener("click", e => {
+    const btn = document.querySelector("#chk")
     if (btn.value == "white") {
         btn.value = "dark";
     } else {
@@ -40,7 +41,7 @@ document.querySelector("#theme").addEventListener("click", e => {
     }
 
     if (e.target.value == "white") {
-        document.querySelector("#body").classList.toggle("darkBG");
+        document.body.classList.toggle("darkBG")
 
         document.querySelector("#makiHeadline").classList.toggle("white");
         document.querySelector("#makiLine").classList.toggle("white");
@@ -55,6 +56,7 @@ document.querySelector("#theme").addEventListener("click", e => {
 
         document.querySelector("#about").classList.toggle("white");
         document.querySelector("#aboutLine").classList.toggle("white");
+        document.querySelector("#githubLine").classList.toggle("white");
 
         document.querySelector("#contact").classList.toggle("white");
         document.querySelector("#underContact").classList.toggle("white");
@@ -76,7 +78,7 @@ document.querySelector("#theme").addEventListener("click", e => {
         document.querySelector("#language").classList.toggle("languageWhite");
 
     } else if (e.target.value == "dark") {
-        document.querySelector("#body").classList.toggle("darkBG");
+        document.body.classList.toggle("darkBG")
 
         document.querySelector("#makiHeadline").classList.toggle("white");
         document.querySelector("#makiLine").classList.toggle("white");
@@ -94,6 +96,7 @@ document.querySelector("#theme").addEventListener("click", e => {
 
         document.querySelector("#contact").classList.toggle("white");
         document.querySelector("#underContact").classList.toggle("white");
+        document.querySelector("#githubLine").classList.toggle("white");
 
         document.querySelector("#skillsLine").classList.toggle("white");
 
@@ -111,6 +114,10 @@ document.querySelector("#theme").addEventListener("click", e => {
         document.querySelector("#codecademyIcon").setAttribute("src", "imgs/skills/blwh/codecademy.png")
 
         document.querySelector("#language").classList.toggle("languageWhite");
+        document.querySelector("#chklabel").classList.toggle("darkBG");
+        document.querySelector("#ball").classList.toggle("darkBG");
+
 
     }
 })
+

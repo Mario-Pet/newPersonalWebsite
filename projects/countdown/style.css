@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
+:root {
+  --purple: #9d5dea;
+  --dark: #242326;
+  --lightPurple: #b691e3;
+  --white: #dddddd;
+  --tempWhite: #a8a1a1;
+}
+* {
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  background-color: var(--white);
+}
+.mainWrapper {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#container {
+  height: 450px;
+  flex-direction: column;
+  margin-top: 260px;
+}
+
+#newyearsheader {
+  color: var(--dark);
+  display: flex;
+
+  justify-content: center;
+}
+
+#newyearsheader > h1 {
+  margin-top: 195px;
+}
+
+#section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+article {
+  color: var(--dark);
+  height: 120px;
+
+  margin: 0% 5%;
+  font-size: 12px;
+}
+#daysBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#daysBox > p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 25px;
+}
+#daysBox > div {
+  margin-top: 35px;
+}
+
+#hoursBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#hoursBox > p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 25px;
+}
+#hoursBox > div {
+  margin-top: 35px;
+}
+#minutesBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#minutesBox > p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 25px;
+}
+#minutesBox > div {
+  margin-top: 35px;
+}
+#secondsBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#secondsBox > p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 25px;
+}
+#secondsBox > div {
+  margin-top: 35px;
+}
+
+/* Styling */
+
+.headline {
+  font-size: 20px;
+}
+
+article > div {
+  font-size: 15px;
+}
+
+select {
+  display: absolute;
+  top: 100%;
+  left: 100%;
+
+  border: none;
+  color: var(--dark);
+  background-color: var(--white);
+}
+
+@media only screen and (max-width: 5000px) {
+  .headline {
+    font-size: 20px;
+  }
+  section {
+    width: 400px !important;
+  }
+  article > div {
+    font-size: 20px;
+  }
+
+  article > p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .headline {
+    font-size: 20px;
+  }
+  section {
+    width: 400px !important;
+  }
+  article > div {
+    font-size: 20px;
+  }
+
+  article > p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .headline {
+    font-size: 20px;
+  }
+  section {
+    width: 200px !important;
+  }
+  article > div {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .headline {
+    font-size: 18px;
+  }
+  section {
+    width: 150px !important;
+  }
+  article > div {
+    font-size: 12px;
+  }
+
+  article > p {
+    font-size: 10px;
+  }
+}

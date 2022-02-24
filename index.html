@@ -13,7 +13,7 @@
         <option>german</option>
         <option>english</option>
     </select>
-    <a class="line github" href="https://github.com/Mario-Pet">github</a>
+    <a class="line github" href="https://github.com/Mario-Pet" id="githubLine">github</a>
     <div class="mainContainer">
         <div class="container">
             <section class="firstSection">
@@ -24,9 +24,9 @@
                 <div class="secondSectionFirstColumn">
                     <span class="subHeadline" id="projectsHeadline">PROJEKTE</span><br>
 
-                    <a href="projects/" class="line" id="projectsBankApp">Bank App;</a>
-                    <a href="projects/" class="line" id="projectsCinemaApp">Kinoplatzreservierung;</a>
-                    <a href="projects/" class="line" id="projectsCountdown">Countdown bis zum neuen Jahr;</a>
+                    <a href="projects/bankApp/main.html" class="line" id="projectsBankApp">Bank App;</a>
+                    <a href="projects/cinemaApp/index.html" class="line" id="projectsCinemaApp">Kinoplatzreservierung;</a>
+                    <a href="projects/countdown/countdown.html" class="line" id="projectsCountdown">Countdown bis zum neuen Jahr;</a>
 
                 </div>
                 <div class="thirdSectionFirstColumn">
@@ -77,6 +77,15 @@
     
         </div>
     </div>
-    <button class="theme" id="theme" value="white">bw/wb</button>
+    
+    <div class="theme">
+        <input type="checkbox" class="checkbox" id="chk" value="white"/>
+        <label class="label" for="chk" id="chklabel">
+            <img class="themeIconSun" src="imgs/whiteThemeIcon.png">
+            <img class="themeIconMoon" src="imgs/darkThemeIcon.png">
+            <div class="ball" id="ball"></div>
+        </label>
+    </div>
+    
 </body>
 </html>

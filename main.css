@@ -8,7 +8,7 @@
 html,
 body {
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 * {
@@ -239,4 +239,154 @@ body.dark {
   left: 3px;
   width: 9px;
   height: 9px;
+}
+@media only screen and (max-width: 1920px) {
+  .github {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    line-height: 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .mainContainer {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mainContainer {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .mainContainer {
+    width: 5%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .mainContainer {
+    width: 5%;
+  }
+  .firstSectionThirdColumn {
+    width: 80%;
+  }
+  .firstSectionThirdColumn > img {
+    width: 70%;
+  }
+  .secondSectionThirdColumn {
+    width: 80%;
+  }
+  .thirdSectionThirdColumn {
+    width: 85%;
+    word-wrap: break-word;
+    font-size: 90%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .mainContainer {
+    min-height: 105vh;
+    width: 10%;
+  }
+  .firstSectionThirdColumn {
+    width: 85%;
+  }
+  .firstSectionThirdColumn > img {
+    width: 85%;
+  }
+  .secondSectionThirdColumn {
+    width: 80%;
+  }
+  .thirdSectionThirdColumn {
+    width: 85%;
+    word-wrap: break-word;
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mainContainer {
+    min-height: 135vh;
+    width: 5%;
+  }
+  .firstSectionThirdColumn {
+    width: 85%;
+  }
+  .firstSectionThirdColumn > img {
+    width: 85%;
+  }
+  .secondSectionThirdColumn {
+    width: 80%;
+  }
+  .thirdSectionThirdColumn {
+    width: 85%;
+    word-wrap: break-word;
+    font-size: 80%;
+  }
+  .github {
+    position: relative;
+    top: 5px;
+    left: 200px;
+    line-height: 8px;
+  }
+  .language {
+    position: relative;
+    top: 5px;
+    right: 5px;
+  }
+
+  .theme {
+    position: relative;
+    bottom: 5px;
+    right: -5px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .mainContainer {
+    min-height: 115vh;
+    width: -5%;
+  }
+  section {
+    margin-right: 0;
+  }
+  .firstSectionThirdColumn {
+    width: 80%;
+  }
+  .firstSectionThirdColumn > img {
+    width: 80%;
+  }
+  .secondSectionThirdColumn {
+    width: 75%;
+  }
+  .thirdSectionThirdColumn {
+    width: 80%;
+    word-wrap: break-word;
+    font-size: 80%;
+  }
+  .github {
+    position: relative;
+    top: 5px;
+    left: 200px;
+    line-height: 8px;
+  }
+  .language {
+    position: relative;
+    top: 5px;
+    right: 5px;
+  }
+
+  .theme {
+    position: relative;
+    bottom: 5px;
+    right: -5px;
+  }
 }

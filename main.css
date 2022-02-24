@@ -5,11 +5,20 @@
   --tempWhite: #a8a1a1;
   --dark: #242326;
 }
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 * {
-  background-color: var(--white);
   font-family: Poppins;
   word-break: word-break;
   color: var(--dark);
+}
+
+body {
+  background-color: var(--white);
 }
 
 .mainContainer {
@@ -27,14 +36,6 @@
 
   height: 43%;
   width: 45%;
-}
-
-section {
-  background-color: var(--white);
-}
-
-span {
-  /* font-size: 20px; */
 }
 
 .firstSection {
@@ -105,6 +106,10 @@ li {
   height: 205px;
 }
 
+.secondSectionThirdColumnEnglish {
+  height: 162px;
+}
+
 .about {
   margin-bottom: 96px;
 }
@@ -142,4 +147,30 @@ ul {
 
 .underHeadline {
   font-size: 100%;
+}
+
+.makiHeadlineEnglish {
+  text-decoration: none;
+  line-height: 100%;
+  font-size: 223%;
+  margin: 0;
+}
+
+.theme {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.darkBG {
+  background-color: var(--dark);
+}
+.whiteBG {
+  background-color: var(--white);
+}
+.dark {
+  color: var(--dark);
+}
+
+.white {
+  color: var(--white);
 }

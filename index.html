@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script defer src="main.js"></script>
 </head>
-<body>
+<body id="body">
     <select>
         <option>german</option>
         <option>english</option>
@@ -18,16 +18,16 @@
         <div class="container">
             <section class="firstSection">
                 <div class="firstSectionFirstColumn">
-                    <span class="makiHeadline">hallo, ich bin <span class="maki">maki;</span></span><br>
-                    <span class="line underHeadline">Ich liebe zu programmieren und ich liebe zu lernen.</span>
+                    <span class="makiHeadline" id="makiHeadline">hallo, ich bin <span class="maki">maki;</span></span><br>
+                    <span class="line underHeadline" id="underHeadline">Ich liebe zu programmieren und ich liebe zu lernen.</span>
                 </div>
                 <div class="secondSectionFirstColumn">
-                    <span class="subHeadline">PROJEKTE</span><br>
+                    <span class="subHeadline" id="projectsHeadline">PROJEKTE</span><br>
 
-                    <a href="projects/" class="line">Bank app;</a>
-                    <a href="projects/" class="line">Kinoplatzreservierung;</a>
-                    <a href="projects/" class="line">Countdown bis zum neuen Jahr;</a>
-                    <a href="projects/" class="line">typeracer;</a>
+                    <a href="projects/" class="line" id="projectsBankApp">Bank App;</a>
+                    <a href="projects/" class="line" id="projectsCinemaApp">Kinoplatzreservierung;</a>
+                    <a href="projects/" class="line" id="projectsCountdown">Countdown bis zum neuen Jahr;</a>
+                    <a href="projects/" class="line" id="projectsTyperacer">typeracer;</a>
                 </div>
                 <div class="thirdSectionFirstColumn">
                     <span class="subHeadline">SKILLS</span>
@@ -60,23 +60,23 @@
                 <div class="firstSectionThirdColumn">
                     <img src="imgs/logoBlack.png" alt="" class="logo">
                 </div>
-                <div class="secondSectionThirdColumn"></div>
+                <div class="secondSectionThirdColumn" id="secondSectionThirdColumn"></div>
                 <div class="thirdSectionThirdColumn">
                     <div class="about">
-                        <span class="subHeadline">ÜBER MICH</span><br>
-                        <span class="line">Ich lese Bücher oft, spiele Klavier und liebe Musik.</span>
+                        <span class="subHeadline" id="about">ÜBER MICH</span><br>
+                        <span class="line" id="aboutLine">Ich lese Bücher oft, spiele Klavier und liebe Musik.</span>
                     </div>
                     
                     <div class="contact">
-                        <span class="subHeadline">KONTAKT</span><br>
-                        <span class="line">contact@mariopetkovic.com</span>
+                        <span class="subHeadline" id="contact">KONTAKT</span><br>
+                        <span class="line" id="underContact">contact@mariopetkovic.com</span>
                     </div>
                     
                 </div>
-            </section>
+            </section> 
     
         </div>
     </div>
-    
+    <button class="theme" id="theme" value="white">bw/wb</button>
 </body>
 </html>

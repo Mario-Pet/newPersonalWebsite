@@ -168,4 +168,39 @@ document.querySelector("#language").addEventListener("change", (e) => {
         document.querySelector("#name").placeholder = "name"
     }
 })
+//in progress
+// document.querySelector("#chk").addEventListener("change", e => {
+//     const btn = document.querySelector("#chk")
+//     if (btn.value == "white") {
+//         btn.value = "dark";
+//     } else {
+//         btn.value = "white";
+//     }
 
+//     if (btn.value == "dark") {
+//         document.querySelector("#balance").classList.toggle("dark");
+//         document.querySelector("#currency").classList.toggle("dark");
+
+//         document.querySelector("#currencySelector").classList.toggle("dark");
+
+
+//         document.querySelector("#headName").classList.toggle("dark");
+//         document.querySelector("#headAmount").classList.toggle("dark");
+//         document.querySelector("#headDate").classList.toggle("dark");
+//         document.querySelector("#headStatus").classList.toggle("dark");
+//         document.querySelector("thead").classList.toggle("darkLine");
+
+//     } else {
+//         document.querySelector("#balance").classList.toggle("dark");
+//         document.querySelector("#currency").classList.toggle("dark");
+
+//         document.querySelector("#currencySelector").classList.toggle("dark");
+
+
+//         document.querySelector("#headName").classList.toggle("dark");
+//         document.querySelector("#headAmount").classList.toggle("dark");
+//         document.querySelector("#headDate").classList.toggle("dark");
+//         document.querySelector("#headStatus").classList.toggle("dark");
+//         document.querySelector("thead").classList.toggle("darkLine");
+//     }
+// })
